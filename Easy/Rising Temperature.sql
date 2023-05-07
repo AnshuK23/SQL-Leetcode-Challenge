@@ -1,23 +1,23 @@
-PROBLEM : 197
+-- PROBLEM : 197
 
-Table: Weather
+-- Table: Weather
 
-+---------------+---------+
-| Column Name   | Type    |
-+---------------+---------+
-| id            | int     |
-| recordDate    | date    |
-| temperature   | int     |
-+---------------+---------+
-id is the primary key for this table.
-This table contains information about the temperature on a certain day.
+-- +---------------+---------+
+-- | Column Name   | Type    |
+-- +---------------+---------+
+-- | id            | int     |
+-- | recordDate    | date    |
+-- | temperature   | int     |
+-- +---------------+---------+
+-- id is the primary key for this table.
+-- This table contains information about the temperature on a certain day.
  
 
-Write an SQL query to find all dates' Id with higher temperatures compared to its previous dates (yesterday).
+-- Write an SQL query to find all dates' Id with higher temperatures compared to its previous dates (yesterday).
 
-Return the result table in any order.
+-- Return the result table in any order.
 
-SOLUTION:
+-- SOLUTION:
 
 SELECT w1.id 
 FROM Weather w1 ,Weather w2 
